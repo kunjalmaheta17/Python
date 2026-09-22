@@ -3,7 +3,6 @@
 import math
 num = float(input("Enter a number: "))
 
-# Mathematical operations
 print("Square root:", math.sqrt(num))
 print("Power (square):", math.pow(num, 2))
 print("Absolute value:", math.fabs(num))

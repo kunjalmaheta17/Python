@@ -3,10 +3,10 @@
 import os
 import sys
 
-# Display current working directory
+#Display current working directory
 print("Current Directory:", os.getcwd())
 
-# Create a new directory
+#Create a new directory
 directory = "MyFolder"
 if not os.path.exists(directory):
     os.mkdir(directory)
@@ -14,20 +14,20 @@ if not os.path.exists(directory):
 else:
     print("Directory already exists:", directory)
 
-# List files and directories
+#List files and directories
 print("Contents of current directory:")
 print(os.listdir())
 
-# Display Python version using sys module
+#Display Python version using sys module
 print("Python Version:", sys.version)
 
-# Display command-line arguments
+#Display command-line arguments
 print("Command-line Arguments:", sys.argv)
 
-# Change directory
+#Change directory
 os.chdir(directory)
 print("Changed Directory:", os.getcwd())
 
-# Return to parent directory
+#Return to parent directory
 os.chdir("..")
 print("Back to Directory:", os.getcwd())
